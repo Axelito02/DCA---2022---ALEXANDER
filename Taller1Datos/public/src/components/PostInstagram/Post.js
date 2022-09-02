@@ -9,11 +9,18 @@ class Post extends HTMLElement {
 
     attributeChangedCallback(prop, oldValue, newValue){
         this[prop] = newValue;
-        this.redender()
+        this.render()
     }
 
     connectedCallback(){
         this.render()
+        const likeF= this.shadowRoot.getElementById("likeBtn")
+        likeF.addEventListener('click',() => {
+            console.log('likes por fin')
+            if (likeF.src= "./src/imgs/heart.png") {
+                likeF.src = "./src/imgs/heart_red.png"
+            }
+        })
     }
 
     render(){
