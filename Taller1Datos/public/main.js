@@ -12,7 +12,7 @@ class MainContainer extends HTMLElement{
     }
 
     render(){
-        const compts = data.map(({ username, comment, comment_count, likes, date}) => `<post-container username=${username} comment_count=${comment_count} likes=${likes} date=${date}></post-container>`)
+        const compts = data.map(({ username, comment_count, likes, date, img}) => `<post-container username=${username} comment_count=${comment_count} likes=${likes} date=${date} img=${img}></post-container>`)
         console.log(compts);
         this.shadowRoot.innerHTML = compts.join("")
     }

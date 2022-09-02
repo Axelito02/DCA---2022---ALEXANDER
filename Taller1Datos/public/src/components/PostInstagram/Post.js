@@ -1,6 +1,6 @@
 class Post extends HTMLElement {
     static get observedAttributes(){
-        return["username","comment", "comment_count", "likes", "date"]
+        return["username", "comment_count", "likes", "date", "img"]
     }
     constructor(){
         super()
@@ -21,6 +21,7 @@ class Post extends HTMLElement {
                 likeF.src = "./src/imgs/heart_red.png"
             }
         })
+        
     }
 
     render(){
@@ -42,7 +43,7 @@ class Post extends HTMLElement {
                     </div>
                 </div>
                 <div class="ImgPost">
-                        <img src="./src/imgs/avogado.jfif" class="PfImg">
+                        <img src="${this.img}" class="PfImg">
                 </div>
                 <div class="actionBtn">
                     <div class="left">
