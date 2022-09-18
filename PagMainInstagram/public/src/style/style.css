@@ -1,0 +1,92 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* header */
+#main{
+ display: flex;
+ flex-direction: column;   
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border-bottom: 0.5px solid #8888;
+    padding: 8px;
+}
+
+.header img {
+    width: 100px;
+    height: 40px;
+}
+
+.principal{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.principal img{
+    cursor: pointer;
+}
+
+.arrowOpt img{
+    width: 20px;
+    height: 20px;
+}
+
+.search {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.search img {
+    width: 16px;
+    height: 16px;
+}
+
+.barInput{
+    padding-left: 10px;
+}
+
+.barInput input{
+    border-radius: 8px;
+    border: none;
+    padding: 12px;
+    background-color: #eeeeee;
+}
+
+.options{
+    display: flex;
+    align-items: center;
+}
+
+.iconOpt{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.iconOpt img{
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.icon{
+    margin-left: 20px;
+}
+
+/* content */
+.containerContent{
+    display: flex;
+    flex-direction: column;
+}
+
+.content{
+    display: grid;
+    grid-template-columns: max-content max-content;
+}

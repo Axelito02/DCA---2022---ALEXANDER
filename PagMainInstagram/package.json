@@ -1,0 +1,21 @@
+{
+  "name": "pagmaininstagram",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "build": "tsc --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.23.1",
+    "nodemon": "^2.0.19",
+    "typescript": "^4.8.3"
+  }
+}
