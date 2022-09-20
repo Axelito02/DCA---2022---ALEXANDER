@@ -1,7 +1,8 @@
-body{
+*{
     margin: 0px;
     padding: 0px;
 }
+
 
 /* header */
 #main{
@@ -76,17 +77,233 @@ body{
     cursor: pointer;
 }
 
+.icon2 img{
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
 .icon{
     margin-left: 20px;
 }
+
 
 /* content */
 .containerContent{
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .content{
     display: grid;
     grid-template-columns: max-content max-content;
+    gap: 20px;
+    margin: 24px 120px 0px 120px;
+}
+
+
+/* stories */
+.stories{
+    border: 0.5px solid #8888;
+    border-radius: 12px;
+}
+
+.storiesContent{
+    display: flex;
+    flex-direction: row;
+}
+
+.storiesContent img{
+    width: 70px;
+}
+
+.storieProf{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 6px;
+}
+
+.storieProf img{
+    border-radius: 50%;
+    border: 0.2px solid;
+    border-color: #8888;
+    padding: 2.5px;
+    cursor: pointer;
+}
+
+
+/* posting cards*/
+.posting{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 16px;
+    margin-bottom: 20px;
+}
+
+.mainCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 12px;
+    border: 0.2px solid;
+    border-color: #8888;
+}
+
+.top{
+    display: flex;
+    flex-direction: row;
+    padding: 8px;
+    width: 430px;
+    justify-content: space-between;
+}
+
+.top h4{
+    cursor: pointer;
+}
+
+.top1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.btnActions{
+    padding: 8px;
+}
+
+.imgProfile img{
+    border-radius: 50%;
+    width: 35px;
+    cursor: pointer;
+}
+
+.points{
+    display: flex;
+    align-items: center;
+}
+
+.points img{
+    width: 20px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.imgPost img{
+    width: 450px;
+}
+
+/* btnActions */
+.containerBtnActions{
+    display: flex;
+    flex-direction: row;
+    width: 430px;
+    justify-content: space-between;
+}
+
+.btnSave{
+    padding: 6px;
+}
+
+.btnaction{
+    padding: 6px;
+}
+
+.btn{
+    margin-left: 20px;
+}
+
+.btn img{
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.btn1 img{
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.btnaction{
+    display: flex;
+    flex-direction: row;
+}
+
+.ContLike{
+    width: 430px;
+}
+
+.ContLike h4{
+    font-size: 16px;
+    padding: 3px;
+}
+
+
+/* profile */
+.profile{
+    display: flex;
+    height: 95px;
+}
+
+.contentProfile{
+    display: grid;
+    grid-template-columns: 30% 56% 18%;
+    align-items: center;
+}
+
+.imgProfileMin img{
+    width: 70px;
+    border-radius: 50%;
+    cursor: pointer;   
+}
+
+.btnProfileMin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnProfileMin h6{
+    color: rgb(49, 166, 196);
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.nameProfileMin{
+    display: grid;
+    grid-template-rows: 35% 35%;
+    width: 160px;
+    gap: 10px;
+}
+
+.imgProfileMin{
+    display: flex;
+}
+
+.name h5{
+    color: rgba(110, 110, 110, 0.533);
+    font-size: 12px;
+}
+
+.username{
+    cursor: pointer;
+}
+
+.titleSuggestion{
+    color: rgba(110, 110, 110, 0.533);
+    font-size: 24px;
+}
+
+.profilesuggest{
+    display: flex;
+    flex-direction: column;
+}
+
+.profileSuggestMin{
+    padding-top: 16px;
+    padding-bottom: 16px;
 }
