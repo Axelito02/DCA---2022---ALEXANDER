@@ -10,9 +10,10 @@ class AppContainer extends HTMLElement {
     render() {
         if (!this.shadowRoot)
             return;
-        this.shadowRoot.innerHTML = `
+        this.shadowRoot.innerHTML = `        
             <header-container></header-container>
             <storie-container></storie-container>
+
         `;
     }
 }
