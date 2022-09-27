@@ -1,4 +1,4 @@
-interface TypeData{
+interface TypeData {
     username: string;
     name: string;
     sugestion: string;
@@ -16,7 +16,7 @@ const data: TypeData[] = [
     },
     {
         username: "yanin_cc",
-        name:"Yanin Calderón",
+        name: "Yanin Calderón",
         sugestion: "icesidmi",
         like: 120,
         comment: 1,

@@ -1,22 +1,21 @@
 import "./components/importer.js";
 
-class AppContainer extends HTMLElement{
-    constructor(){
+class AppContainer extends HTMLElement {
+    constructor() {
         super()
-        this.attachShadow({mode: 'open'})
+        this.attachShadow({ mode: 'open' })
 
     }
 
-    connectedCallback(){
+    connectedCallback() {
         this.render();
     }
 
     render() {
-        if(!this.shadowRoot) return;
+        if (!this.shadowRoot) return;
         this.shadowRoot.innerHTML = `        
             <header-container></header-container>
             <storie-container></storie-container>
-
         `;
     }
 }
