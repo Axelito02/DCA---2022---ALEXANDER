@@ -13,6 +13,7 @@ class ContainerProfile extends HTMLElement {
     static get observedAtributes() {
         return Object.keys(Atributtes);
     }
+
     attributeChangeCallback(prop, _, newValue) {
         this[prop] = newValue;
     }
@@ -23,7 +24,7 @@ class ContainerProfile extends HTMLElement {
         if (!this.shadowRoot)
             return;
         this.shadowRoot.innerHTML = `
-        <link rel="stylesheet" href="./src/style/style.css">
+            <link rel="stylesheet" href="./src/style/style.css">
         
         <div>
         <div class="profile">

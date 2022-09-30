@@ -5,6 +5,21 @@ class Post extends HTMLElement {
     constructor(){
         super()
         this.attachShadow({mode: 'open'})
+
+        // agregar la funcion que creamos abajo
+        this.traerDatos();
+    }
+
+// funcion creado para traer los datos de la base de datos
+    traerDatos() {
+        //todo lo de firebase
+
+        // snapshop.data siempre va porque es un  propiedad de la base de datos
+        // this.datos = snapshot.data()
+
+        // otra maneera de traer los datos
+        // return datos = snapshot.data()
+
     }
 
     attributeChangedCallback(prop, oldValue, newValue){

@@ -8,12 +8,11 @@ class AppContainer extends HTMLElement {
         this.render();
     }
     render() {
-        if (!this.shadowRoot)
-            return;
+        if (!this.shadowRoot) return;
         this.shadowRoot.innerHTML = `        
             <header-container></header-container>
             <storie-container></storie-container>
-
+        
         `;
     }
 }

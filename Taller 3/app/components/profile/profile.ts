@@ -28,7 +28,7 @@ class ContainerProfile extends HTMLElement{
         if(!this.shadowRoot) return;
         this.shadowRoot.innerHTML = `
         <link rel="stylesheet" href="./src/style/style.css">
-        
+
         <div>
         <div class="profile">
             <div class="contentProfile">
