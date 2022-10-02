@@ -1,14 +1,9 @@
 export interface PokeData {
 
-    abilities: string;
-    height: number
     id: number
-    location_area_encounters: string
-    name: string
-    species: string
     sprites: string
-    stats: string
+    name: string
     types: string
-    weight: number
+    abilities: string;
 
 }

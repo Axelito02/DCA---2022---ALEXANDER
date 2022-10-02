@@ -32,23 +32,47 @@ class CardContainer extends HTMLElement {
     render(pokedex:Array<PokeData>): void {
         if (!this.shadowRoot) return
 
-        const Pokemap = pokedex.map(({id, height, abilities, location_area_encounters, name, species, stats, types, weight, sprites}) => `<article>
-            <h4>${id}</h4>
-            <h4>${name}</h4>
-            <h4>${types}</h4>
-            <h4>${species}</h4>
+        const Pokemap = pokedex.map(({abilities, id, name, types, sprites}) => `
+
+        <div class="containerPokecard">
+        <div class="imgPoke">
             <img src="${sprites}">
-            <h4>${abilities}</h4>
-            <h4>${location_area_encounters}</h4>
-            <h4>${stats}</h4>
-            <h4>${height}</h4>
-            <h4>${weight}</h4>
-        </article>`)
+        </div>
+
+        <div class="namePoke">
+            <div class="name">
+                <h2>
+                    ${name}
+                </h2>
+            </div>
+            <div class="id">
+                <h2>
+                    N.º ${id}
+                </h2>
+            </div>
+        </div>
+
+        <div class="typePoke">
+            <div class="type">${types}</div>
+        </div>
+
+        <div class="statsPoke">
+            <div class="titleStatsPoke">
+                <h3>
+                    Abilities
+                </h3>
+            </div>
+            <div class="statsPokeInfo">
+                <p>
+                    ${abilities}
+                </p>
+            </div>
+        </div>
+    </div>`)
         this.shadowRoot.innerHTML = `
             ${Pokemap.join("")}
         `
     }
-
 }
 
 customElements.define('card-container', CardContainer)

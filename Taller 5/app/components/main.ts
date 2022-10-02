@@ -14,22 +14,13 @@ class AppContainer extends HTMLElement {
         if (!this.shadowRoot) return
         this.shadowRoot.innerHTML = `
         <link rel="stylesheet" href="./src/style/MainStyle.css">
-        
-        <section>
-            <div class = "mainContainer">
-                <div>
-                    <card-container></card-container>
-                </div>
-                <div>
-                    <card-container></card-container>
-                </div>
-                    
 
-                <div>
-                    desde app container
+            <div class = "mainContainer">
+                <div class= "containerCards">
+                    <card-container></card-container>
                 </div>
             </div>
-        </section>
+
         `;
     }
 }
