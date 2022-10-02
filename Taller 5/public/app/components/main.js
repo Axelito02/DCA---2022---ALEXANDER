@@ -1,4 +1,4 @@
-import './import.js';
+import "./import.js";
 class AppContainer extends HTMLElement {
     constructor() {
         super();
