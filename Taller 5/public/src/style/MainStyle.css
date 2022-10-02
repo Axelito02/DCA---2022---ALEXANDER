@@ -1,0 +1,22 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+section{
+    display: flex;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainContainer{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25% ;
+    grid-template-rows: auto;
+    gap: 12px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    background-color: rgb(197, 252, 233);
+}

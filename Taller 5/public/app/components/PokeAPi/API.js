@@ -7,20 +7,9 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
-const pokemones = "https://pokeapi.co/api/v2/pokemon";
-const abilities = "https://pokeapi.co/api/v2/ability";
-const nature = "https://pokeapi.co/api/v2/nature";
-const habitat = "https://pokeapi.co/api/v2/pokemon-habitat";
-const type = "https://pokeapi.co/api/v2/type";
-function Apifuntion() {
-    return __awaiter(this, void 0, void 0, function* () {
-        let response = yield fetch(pokemones);
-        let pokemons = yield response.json();
-        console.log(pokemons.results);
-        for (let i = 0; i < pokemons; i++) {
-            console.log(pokemons[i]);
-        }
-    });
-}
-Apifuntion();
-export default pokemones;
+export const getPokedex = () => __awaiter(void 0, void 0, void 0, function* () {
+    const response = yield fetch("https://pokeapi.co/api/v2/pokemon");
+    const DataApi = yield response.json();
+    console.log(DataApi.results);
+    return [DataApi.results];
+});

@@ -4,17 +4,18 @@
 * la primera contendrá los números pares del arreglo y la segunda los impares
 */
 
-const numbers2 = [1, 2, 3, 4, 5, 6];
+const numbers = [1, 2, 3, 4, 5, 6];
+const par:number[] = [];
+const imp:number[] = [];
 
 function math1() {
-    const par = [];
-    const imp = [];
-    for (let i = 0; i < numbers2.length; i++) {
+
+    for (let i = 0; i < numbers.length; i++) {
         if (i % 2 === 0) {
-            imp.push(numbers2[i]);
+            imp.push(numbers[i]);
         }
         else {
-            par.push(numbers2[i]);
+            par.push(numbers[i]);
         }
     }
     console.log('pares:'+ par);

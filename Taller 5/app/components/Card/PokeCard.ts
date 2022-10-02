@@ -1,3 +1,6 @@
+import {getPokedex} from '../PokeAPi/API.js';
+import { PokeData } from '../TypeData/typedata.js';
+
 enum DatesApi {
     pokemones = 'pokemones',
     abilities = 'abilities',
@@ -21,17 +24,28 @@ class CardContainer extends HTMLElement {
         this[prop] = newVAlue;
     }
 
-    connectedCallback(): void {
-        this.render();
+    async connectedCallback() {
+        const pokedex = await getPokedex();
+        this.render(pokedex);
     }
 
-    render(): void {
+    render(pokedex:Array<PokeData>): void {
         if (!this.shadowRoot) return
+
+        const Pokemap = pokedex.map(({id, height, abilities, location_area_encounters, name, species, stats, types, weight, sprites}) => `<article>
+            <h4>${id}</h4>
+            <h4>${name}</h4>
+            <h4>${types}</h4>
+            <h4>${species}</h4>
+            <img src="${sprites}">
+            <h4>${abilities}</h4>
+            <h4>${location_area_encounters}</h4>
+            <h4>${stats}</h4>
+            <h4>${height}</h4>
+            <h4>${weight}</h4>
+        </article>`)
         this.shadowRoot.innerHTML = `
-        
-        desde la pokecard
-        <div>
-        </div>
+            ${Pokemap.join("")}
         `
     }
 

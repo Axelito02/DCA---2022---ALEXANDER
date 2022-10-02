@@ -28,9 +28,17 @@ class ContainerSuggest extends HTMLElement {
         <div class="suggestion">
         <div class="contentSuggestion">
             <div class="titleSuggestion">
-                <h6>
-                    suggestions for you
-                </h6>
+                <div>
+                    <h6>
+                        Suggestions for you
+                    </h6>
+                </div>
+                <div class="titleSuggestion">
+                    <h6>
+                        View all
+                    </h6>   
+                </div>
+
             </div>
 
             <div class="contentmainSuggestProfile">
@@ -48,7 +56,7 @@ class ContainerSuggest extends HTMLElement {
                             </div>
                         </div>
                         <div class="btnProfileMin">
-                            <h6>Change</h6>
+                            <h6>Follow</h6>
                         </div>
                     </div>
                 </div>

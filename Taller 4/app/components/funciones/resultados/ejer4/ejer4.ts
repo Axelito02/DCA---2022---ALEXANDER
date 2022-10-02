@@ -8,11 +8,12 @@
 const texto = ['hola', 'adios', 'sueño', 'hola', 'sueño', 'hola', 'buenas', 'loki', 'hola', 'sueño'];
 
 function listas () {
-    // const a = [];z
+    const a = [];
     const b = [];
     for (let i = 0; i < texto.length; i++) {
-        if (i % 2 === 0) {
+        if (texto.length) {
             b.push(texto[i]);
+            a.push(texto[i]);
         }
         console.log(b);
         return b;
