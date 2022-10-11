@@ -1,13 +1,9 @@
 enum Atributtes {
     username = "username",
-    comment = "comment",
-    like = "like",
 }
 
 class ContainerStories extends HTMLElement{
-    username = '';
-    comment = '';
-    like = '';
+    username: string = '';
 
     static get observedAtributes(): Atributtes[] {
         return Object.keys(Atributtes) as Atributtes[];

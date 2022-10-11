@@ -43,5 +43,4 @@ const data: TypeData[] = [
         comment: 131,
     }
 ]
-
-export default data;
+export default data

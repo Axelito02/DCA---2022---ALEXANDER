@@ -1,17 +1,17 @@
-enum Atributtes {
+enum Atributes {
     username = "username",
     name = "name"
 }
 
 class ContainerSuggest extends HTMLElement{
-    username = '';
-    name = "";
+    username: string = "";
+    name: string = ""
 
-    static get observedAtributes(): Atributtes[] {
-        return Object.keys(Atributtes) as Atributtes[];
+    static get observedAttributes(): Atributes[] {
+        return Object.keys(Atributes) as Atributes[];
     }
 
-    attributeChangeCallback(prop: Atributtes, _:string, newValue:string):void{
+    attributeChangeCallback(prop: Atributes, _:string, newValue:string) {
         this[prop] = newValue;
     }
 
@@ -20,12 +20,12 @@ class ContainerSuggest extends HTMLElement{
         this.attachShadow({mode: 'open'})
     }
 
-    connectedCallback():void {
-        this.render();
+    connectedCallback(): void {
+        this.render()
     }
 
-    render():void {
-        if(!this.shadowRoot) return;
+    render(): void {
+        if(!this.shadowRoot) return
         this.shadowRoot.innerHTML = `
         <link rel="stylesheet" href="./src/style/style.css">
         
@@ -67,9 +67,9 @@ class ContainerSuggest extends HTMLElement{
             </div>
         </div>
         </div>
-        `;
+
+        `
     }
 }
-
-customElements.define('suggest-container', ContainerSuggest)
-export default ContainerSuggest;
+ customElements.define('suggest-container', ContainerSuggest)
+ export default ContainerSuggest

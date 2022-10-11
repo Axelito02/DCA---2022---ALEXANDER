@@ -1,26 +1,26 @@
 import "./components/importer.js";
+import data from "./data.js"
 
-class AppContainer extends HTMLElement {
-    constructor() {
+class AppContainer extends HTMLElement{
+    constructor(){
         super()
-        this.attachShadow({ mode: 'open' })
-
+        this.attachShadow({mode: 'open'})
     }
 
-    connectedCallback() {
+    connectedCallback(){
         this.render();
     }
 
     render() {
-        if (!this.shadowRoot) return;
+        if(!this.shadowRoot) return
         this.shadowRoot.innerHTML = `
         <link rel="stylesheet" href="./src/style/style.css">
-
+        
         <header-container></header-container> 
-
+        
         <section class="containerContent">
             <div class="content">
-
+        
                 <div>
                     <storie-container></storie-container>
                     <post-container></post-container>
@@ -32,7 +32,8 @@ class AppContainer extends HTMLElement {
                 </div>
             </div>
         </section>
-        `;
+        
+        `
     }
 }
 

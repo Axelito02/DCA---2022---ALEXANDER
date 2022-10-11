@@ -12,12 +12,12 @@ class AppContainer extends HTMLElement {
             return;
         this.shadowRoot.innerHTML = `
         <link rel="stylesheet" href="./src/style/style.css">
-
+        
         <header-container></header-container> 
-
+        
         <section class="containerContent">
             <div class="content">
-
+        
                 <div>
                     <storie-container></storie-container>
                     <post-container></post-container>
@@ -29,6 +29,7 @@ class AppContainer extends HTMLElement {
                 </div>
             </div>
         </section>
+        
         `;
     }
 }

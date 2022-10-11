@@ -1,15 +1,11 @@
 var Atributtes;
 (function (Atributtes) {
     Atributtes["username"] = "username";
-    Atributtes["comment"] = "comment";
-    Atributtes["like"] = "like";
 })(Atributtes || (Atributtes = {}));
 class ContainerStories extends HTMLElement {
     constructor() {
         super();
         this.username = '';
-        this.comment = '';
-        this.like = '';
         this.attachShadow({ mode: 'open' });
     }
     static get observedAtributes() {

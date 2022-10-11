@@ -1,17 +1,17 @@
-var Atributtes;
-(function (Atributtes) {
-    Atributtes["username"] = "username";
-    Atributtes["name"] = "name";
-})(Atributtes || (Atributtes = {}));
+var Atributes;
+(function (Atributes) {
+    Atributes["username"] = "username";
+    Atributes["name"] = "name";
+})(Atributes || (Atributes = {}));
 class ContainerSuggest extends HTMLElement {
     constructor() {
         super();
-        this.username = '';
+        this.username = "";
         this.name = "";
         this.attachShadow({ mode: 'open' });
     }
-    static get observedAtributes() {
-        return Object.keys(Atributtes);
+    static get observedAttributes() {
+        return Object.keys(Atributes);
     }
     attributeChangeCallback(prop, _, newValue) {
         this[prop] = newValue;
@@ -63,6 +63,7 @@ class ContainerSuggest extends HTMLElement {
             </div>
         </div>
         </div>
+
         `;
     }
 }

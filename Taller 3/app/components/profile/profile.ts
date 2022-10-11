@@ -4,8 +4,8 @@ enum Atributtes {
 }
 
 class ContainerProfile extends HTMLElement{
-    username = '';
-    name = "";
+    username: string = '';
+    name: string = "";
 
     static get observedAtributes(): Atributtes[] {
         return Object.keys(Atributtes) as Atributtes[];
